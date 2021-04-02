@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyGoals</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="tab_text_1">Videos</string>
+    <string name="tab_text_2">Chats</string>
+    <string name="tab_text_3">Notifications</string>
+    <string name="tab_text_4">User Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

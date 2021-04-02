@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".UserprofileFragment">
+
+
+   <ImageView
+       android:id="@+id/img_profile"
+       android:layout_width="120dp"
+       android:layout_height="120dp"
+       android:layout_marginBottom="450dp"
+       android:layout_marginLeft="-15dp"
+       android:src="@drawable/userprofile" />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/txt_view"
+       android:layout_below="@+id/img_profile"
+       android:layout_marginTop="-420dp"
+       android:text="My Profile"
+       android:textStyle="bold"
+       android:textSize="20dp"/>
+
+
+ <EditText
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/img_profile"
+     android:layout_marginTop="-350dp"
+     android:layout_marginLeft="-50dp"
+     android:id="@+id/ed_abt"
+     android:text="About"/>
+
+   <EditText
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/ed_abt"
+       android:layout_marginLeft="-50dp"
+       android:id="@+id/ed_share"
+       android:text="Share this app" />
+
+   <EditText
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/ed_share"
+       android:id="@+id/ed_settings"
+       android:layout_marginLeft="-50dp"
+       android:text="Settings" />
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/ed_settings"
+       android:layout_marginTop="30dp"
+       android:layout_marginLeft="-50dp"
+       android:id="@+id/btn_logout"
+       android:text="Logout" />
+
+
+</RelativeLayout>
