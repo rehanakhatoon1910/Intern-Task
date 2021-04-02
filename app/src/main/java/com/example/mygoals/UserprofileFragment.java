@@ -1,5 +1,6 @@
 package com.example.mygoals;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -12,11 +13,13 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class UserprofileFragment extends Fragment {
     private ImageView imageView;
     TextView textView;
     private EditText Abt,Share,Settings;
-    Button btnlogout;
+    Button logout;
 
 
     @Override
@@ -29,7 +32,16 @@ public class UserprofileFragment extends Fragment {
         Abt=view.findViewById(R.id.ed_abt);
         Share=view.findViewById(R.id.ed_share);
         Settings=view.findViewById(R.id.ed_settings);
-        btnlogout=view.findViewById(R.id.btn_logout);
+        logout=view.findViewById(R.id.btn_logout);
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FirebaseAuth.getInstance().signOut();
+                Intent i = new Intent(getContext(), Login.class);
+                startActivity(i);
+            }
+        });
 
         return view;
     }

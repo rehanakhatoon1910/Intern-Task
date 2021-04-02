@@ -15,6 +15,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 import com.example.mygoals.ui.main.SectionsPagerAdapter;
 import com.google.firebase.auth.FirebaseAuth;
@@ -28,6 +29,7 @@ public class TabActivity extends AppCompatActivity {
         SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
         ViewPager viewPager = findViewById(R.id.view_pager);
         viewPager.setAdapter(sectionsPagerAdapter);
+        Button nextActivity =findViewById(R.id.nextActivity);
         TabLayout tabs = findViewById(R.id.tabs);
         tabs.setupWithViewPager(viewPager);
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -46,6 +48,14 @@ public class TabActivity extends AppCompatActivity {
             public void onClick(View view) {
                 FirebaseAuth.getInstance().signOut();
                 Intent i = new Intent(TabActivity.this, Login.class);
+                startActivity(i);
+            }
+        });
+
+        nextActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(TabActivity.this, MainActivity.class);
                 startActivity(i);
             }
         });
