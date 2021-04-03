@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="19dp"
+    tools:context=".addnotice">
+
+
+    <Button
+        android:id="@+id/button_choose_notice"
+        android:layout_width="wrap_content"
+        android:backgroundTint="#242121"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-2dp"
+        android:text="CHOOSE FILE" />
+
+    <EditText
+        android:id="@+id/enter_notice_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_toEndOf="@+id/button_choose_notice"
+        android:layout_toRightOf="@+id/button_choose_notice"
+        android:ems="11"
+        android:hint="Notice Description"
+        android:textColorHint="@color/black" />
+
+    <ImageView
+        android:id="@+id/noticeimage"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/progressbar"
+        android:layout_below="@+id/button_choose_notice"
+        android:paddingTop="16dp" />
+
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="91dp" />
+
+    <Button
+        android:id="@+id/uploadnotice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="143dp"
+        android:layout_marginLeft="143dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#1D1919"
+        android:text="upload" />
+
+    <TextView
+        android:id="@+id/showuploads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/uploadnotice"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="50dp"
+        android:layout_toEndOf="@+id/uploadnotice"
+        android:layout_toRightOf="@+id/uploadnotice"
+        android:gravity="center"
+        android:text="show uploads"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>

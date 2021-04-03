@@ -15,7 +15,10 @@
 
         <activity android:name=".Login" />
         <activity android:name=".SignUp" />
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".VideoFeedActivity"/>
+        <activity android:name=".viewnotice" />
+        <activity android:name=".showuploads" />
+        <activity android:name=".addnotice" />
 
         <activity android:name=".LoadScreen"
                   android:theme="@style/Theme.MyGoals.NoActionBar">
